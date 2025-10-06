@@ -1,0 +1,66 @@
+/* Reset some default styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Body styling */
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #f7f8fa;
+    color: #222;
+    min-height: 100vh;
+}
+
+/* Container for the app */
+.app-container {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 24px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 16px rgba(0,0,0,0.07);
+}
+
+/* Flashcard styles */
+.flashcard {
+    background: #f0f4ff;
+    border-radius: 8px;
+    padding: 32px 24px;
+    margin-bottom: 24px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.flashcard:hover {
+    background: #e4ebff;
+}
+
+/* Button styles */
+button {
+    background: #2563eb;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.15s;
+}
+
+button:hover {
+    background: #1d4ed8;
+}
+
+/* Responsive design */
+@media (max-width: 700px) {
+    .app-container {
+        max-width: 95%;
+        padding: 12px;
+    }
+    .flashcard {
+        padding: 20px 10px;
+    }
+}
